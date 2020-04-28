@@ -28,7 +28,8 @@ def recvData(devId,sock, addr):
         print(content)
 
         if len(content) !=0:
-            cmd = bytes.fromhex('55AA0405000F03505000F2')
+            
+            cmd = bytes.fromhex('55AA29010000D7')
             sendCmd(devId,cmd)
         # sock.send(data)
         # time.sleep(1)
